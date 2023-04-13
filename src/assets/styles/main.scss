@@ -1,0 +1,74 @@
+// // css app
+// .ant-menu-item:hover:not(.ant-menu-item-selected, .no-hover) {
+//   background: unset !important;
+//   color: unset !important;
+// }
+.glow-on-hover {
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.shadows-button-start-fort {
+  box-shadow: 4px 3px #040c37;
+}
+
+.ant-menu-item:hover,
+.no-hover:hover {
+  background: unset !important;
+}
+.header-app {
+  background-color: white;
+  position: fixed;
+  .menu {
+    border-inline-end: unset !important;
+    gap: 12px;
+    &__item {
+      width: 100%;
+      padding: 0 24px;
+      text-overflow: unset;
+      color: gray;
+      text-transform: uppercase;
+      overflow: inherit;
+    }
+  }
+}
+
+// @media screen and (max-width: 1024px) {
+//   .header-app {
+//     .content-header {
+//       .menuButton {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         margin-right: 10px;
+//         color: #fff;
+//         height: 45px;
+//       }
+
+//       .menu {
+//         display: none;
+//       }
+//     }
+//   }
+// }
