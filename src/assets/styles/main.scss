@@ -3,6 +3,15 @@
 //   background: unset !important;
 //   color: unset !important;
 // }
+@font-face {
+  font-family: "Aviano Serif";
+  src: local("Aviano Serif"),
+    url("../../assets/fonts/AvianoSerif.otf") format("opentype");
+}
+
+body {
+  font-family: "Montserrat" !important;
+}
 .glow-on-hover {
   border: none;
   outline: none;
@@ -30,7 +39,15 @@
 }
 
 .shadows-button-start-fort {
-  box-shadow: 4px 3px #040c37;
+  background: #21294d;
+  box-shadow: 4px 4px 0px #070707;
+}
+
+.font-montserrat {
+  font-family: "Montserrat" !important;
+}
+.font-aviano-serif {
+  font-family: "Aviano Serif" !important;
 }
 
 .ant-menu-item:hover,
@@ -38,7 +55,7 @@
   background: unset !important;
 }
 .header-app {
-  background-color: white;
+  background: rgba(255, 255, 255, 0.9);
   position: fixed;
   .menu {
     border-inline-end: unset !important;
@@ -52,6 +69,24 @@
       overflow: inherit;
     }
   }
+}
+
+.title-app {
+  font-family: "Aviano Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 113.5%;
+  background: linear-gradient(
+    209.53deg,
+    #21294d 6.68%,
+    #8b9bff 54.3%,
+    #87d4ff 105.43%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 // @media screen and (max-width: 1024px) {

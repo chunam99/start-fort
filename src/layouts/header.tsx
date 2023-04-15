@@ -2,7 +2,7 @@ import { MenuUnfoldOutlined } from "@ant-design/icons";
 import { Drawer, Menu } from "antd";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import logo from "../assets/img/logo.png";
+import logo from "../assets/img/logo.svg";
 import BlockContent from "../components/BlockContent";
 
 export default function Header() {
@@ -72,8 +72,8 @@ export default function Header() {
                 ))}
               </Menu>
             </div>
-            <button className="py-2 px-3 text-white font-medium bg-[#040c37] ">
-              launch Dapp
+            <button className="py-2 px-3 text-white font-medium bg-[#21294D] font-montserrat ">
+              Launch Dapp
             </button>
             <div className="menuButton hidden" onClick={showDrawer}>
               <MenuUnfoldOutlined />
