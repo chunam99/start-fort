@@ -56,10 +56,10 @@ export default function Header() {
     <React.Fragment>
       <div className={`header-app w-full fixed z-10`}>
         <BlockContent>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center py-[15px]">
             <div className="flex gap-8">
               <Image alt="logo" src={logo} />
-              <Menu className="menu flex justify-between">
+              <Menu className="menu flex justify-between bg-transparent">
                 {dataMenu.map((item, key) => (
                   <Menu.Item className="glow-on-hover menu__item" key={key}>
                     <a
@@ -72,7 +72,7 @@ export default function Header() {
                 ))}
               </Menu>
             </div>
-            <button className="py-2 px-3 text-white font-medium bg-[#21294D] font-montserrat ">
+            <button className="glow-on-hover py-2 px-3 text-white font-medium bg-[#21294D] font-montserrat btn-lauch ">
               Launch Dapp
             </button>
             <div className="menuButton hidden" onClick={showDrawer}>
@@ -87,7 +87,7 @@ export default function Header() {
             >
               <Menu>
                 {dataMenu.map((item, key) => (
-                  <Menu.Item key={key}>
+                  <Menu.Item key={key} className="capitalize">
                     <a
                       className={`${active === item.onclick && "active-menu"}`}
                       href={`${item.onclick}`}
@@ -96,11 +96,11 @@ export default function Header() {
                     </a>
                   </Menu.Item>
                 ))}
-                <Menu.Item>
-                  <button className="button-d-app" style={{}}>
-                    Connect Wallet
+                <div className="py-2 px-3  bg-[#21294D] w-fit">
+                  <button className="py-2 px-3 text-white font-medium font-montserrat ">
+                    Launch Dapp
                   </button>
-                </Menu.Item>
+                </div>
               </Menu>
             </Drawer>
           </div>
